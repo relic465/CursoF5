@@ -1,0 +1,91 @@
+body{
+    background-color: #000;
+    margin: 0px;
+    height: 100vh;
+}
+h1{
+    color: #fff;
+    text-align: center;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    z-index: 0;
+}
+img{
+    max-width: 40%;
+    border-radius: 30px;
+}
+.boton{
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.boton::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(17, 255, 0), rgb(255, 136, 0), rgb(255, 0, 149), rgb(0, 255, 221)
+    );
+    background-size: 800%;
+    border-radius: 10px;
+    filter: blur(20px);
+    animation: glow 8s linear infinite;
+}
+@keyframes glow{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position:400%;
+    }
+}
+.boton_hover{
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.boton_hover::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50px;
+    filter: blur(20px);
+    opacity: 0;
+    transform: opacity 0.5s;
+}
+.boton_hover:hover{
+    background: linear-gradient(90deg, green, orange, blue);
+    background-size: 400%;
+    z-index: 0;
+    animation: brillo 10s linear infinite;
+}
+@keyframes brillo{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position:400%;
+    }
+}
