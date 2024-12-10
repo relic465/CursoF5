@@ -22,7 +22,7 @@ body {
     align-items: center;
     text-align: center; /* Centra el texto */
     color: #ffffff; /* Color blanco para el texto */
-    background: rgba(0, 0, 0, 0.3); /* Filtro oscuro semitransparente */
+    background: #0001; /* Filtro oscuro semitransparente */
 }
 
 /* Encabezado del menú */
@@ -32,7 +32,7 @@ body {
 
 .menu h1 {
     font-size: 2.5rem; /* Tamaño del texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra al texto */
+    text-shadow: 2px 2px 5px #000b /* Sombra al texto */
 }
 
 /* Botones */
@@ -46,7 +46,7 @@ body {
     background-color: #ff6b6b; /* Color del botón */
     color: white; /* Color del texto */
     border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 20px; /* Bordes redondeados */
     padding: 10px 20px; /* Espaciado interno */
     font-size: 1rem; /* Tamaño del texto */
     cursor: pointer; /* Manito al pasar por el botón */
@@ -57,3 +57,283 @@ body {
 .botones button:hover {
     background-color: #ff4040; /* Cambia el color al pasar el ratón */
 }
+
+/*este espacio esta ciendo usado para las pruevas*/
+.photo{
+    width: 250px;
+    height: 220px;
+    border-radius: 20px 20px 0 0 ;
+    margin: 0;
+    margin-top: 20px;
+}
+.cartas a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carta{
+    margin: 20px;
+}
+.c-txt{
+    margin: 0;
+    padding: 10px;
+    width: 92%;
+    border-radius: 0 0 10px 10px ; 
+    background-color: #000d;
+}
+
+/*esto es la animacion de el titulo*/
+.contenedor{
+    height: 10vh;
+    display: flex;
+    color: #fff;
+    justify-content: start;
+    align-items: start;
+    padding: 20px;
+}
+.palabra{
+    position: relative;
+    margin: 10px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1{
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.bienvenido::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #B22222, 0 0 04px 2px #B22222;
+    z-index: -1;
+    animation-name: yellow-shadow;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+.bienvenido::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    box-shadow: 0 0 17px 3px #FFD700, 0 0 04px 2px #FFD700;
+    z-index: -1;
+    animation-name: cian-shadow;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+@keyframes yellow-shadow{
+    0%{
+        top:0%;
+        left:0%;
+    }
+    25%{
+        top:50%;
+        left:0%;
+    }
+    50%{
+        top:50%;
+        left:50%;
+    }
+    75%{
+        top:0%;
+        left:50%;
+    }
+    100%{
+        top:0%;
+        left:0%;
+    }
+}
+@keyframes cian-shadow{
+    0%{
+        bottom:0%;
+        right:0%;
+    }
+    25%{
+        bottom:50%;
+        right:0%;
+    }
+    50%{
+        bottom:50%;
+        right:50%;
+    }
+    75%{
+        bottom:0%;
+        right:50%;
+    }
+    100%{
+        bottom:0%;
+        right:0%;
+    }
+}
+.ami::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 17px 3px rgb(255, 166, 0), 0 0 04px 2px rgb(255, 166, 0);
+    animation-name: orange-shadow;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;   
+}
+@keyframes orange-shadow{
+    0%{
+        box-shadow: 0 0 17px 3px #B22222, 0 0 04px 2px #B22222;
+    }
+    20%{
+        box-shadow: 0 0 17px 3px #FF8C00, 0 0 04px 2px #FF8C00;
+    }
+    40%{
+        box-shadow: 0 0 17px 3px #6B8E23, 0 0 04px 2px #6B8E23;
+    }
+    60%{
+        box-shadow: 0 0 17px 3px #D2691E, 0 0 04px 2px #D2691E;
+    }
+    80%{
+        box-shadow: 0 0 17px 3px #8B4513, 0 0 04px 2px #8B4513;
+    }
+    100%{
+        box-shadow: 0 0 17px 3px #8B0000, 0 0 04px 2px #8B0000;
+    }
+}
+.portfolio::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+            box-shadow: 0 0 17px 3px #8B0000,0 0 4px 2px #8B0000;
+    z-index: -1;
+            animation-name: half-yellow-shadow;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+    border-radius: 10px;
+  }
+
+.portfolio::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+            box-shadow: 0 0 17px 3px #FF8C00,0 0 4px 2px #FF8C00;
+    z-index: -1;
+            animation-name: half-cyan-shadow;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+    border-radius: 10px;
+  }
+@keyframes half-yellow-shadow {
+    0% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+    16.66% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 100%;
+    }
+     32.32% {
+      top: 0;
+      left: 50%;
+      height: 50%;
+      width: 50%;
+    }
+     49.98% {
+      top: 50%;
+      left: 50%;
+      height: 50%;
+      width: 50%;
+    }
+     66.64% {
+      top: 50%;
+      left: 0;
+      height: 50%;
+      width: 100%;
+    }
+    83.3% {
+      top: 50%;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+     100% {
+      top: 0;
+      left: 0;
+      height: 50%;
+      width: 50%;
+    }
+  }
+@keyframes half-cyan-shadow{
+     0% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+    16.66% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 100%;
+    }
+    32.32% {
+      bottom: 0;
+      right: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    49.98% {
+      bottom: 50%;
+      right: 50%;
+      height: 50%;
+      width: 50%;
+    }
+    66.64% {
+      bottom: 50%;
+      right: 0;
+      height: 50%;
+      width: 100%;
+    }
+    83.3% {
+      bottom: 50%;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+    100% {
+      bottom: 0;
+      right: 0;
+      height: 50%;
+      width: 50%;
+    }
+  }
