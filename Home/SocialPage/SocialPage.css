@@ -146,6 +146,9 @@ h1{
     animation-iteration-count: infinite;
     border-radius: 20px;   
 }
+.Social a{
+    color: #fff;
+}
 @keyframes orange-shadow{
     0%{
         box-shadow: 0 0 17px 3px #B22222, 0 0 04px 2px #B22222;
