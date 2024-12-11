@@ -1,0 +1,168 @@
+/* Estilo general del body */
+body {
+    background-image: url('/images/background.png'); /* Ruta a la imagen */
+    background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* La imagen permanece fija al hacer scroll */
+    background-position: center; /* Centra la imagen en el fondo */
+    font-family: Arial, sans-serif; /* Estilo del texto */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Elimina relleno */
+    height: 100vh; /* Asegura que el fondo ocupe toda la ventana */
+}
+
+/* Contenedor principal para superponer contenido */
+.overlay {
+    position: relative; /* Posiciona los elementos en relación al contenedor */
+    height: 100%; /* Ocupa todo el alto disponible */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color blanco para el texto */
+    background: #0001; /* Filtro oscuro semitransparente */
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: auto;
+    background-color: #a52a2aa9;
+    border-radius: 20px;
+}
+/* Encabezado del menú */
+.menu {
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.menu h1 {
+    font-size: 2.5rem; /* Tamaño del texto */
+    text-shadow: 2px 2px 5px #000b /* Sombra al texto */
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si hay muchos */
+    gap: 15px; /* Espaciado entre botones */
+    background-color: #d2691ebb;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.botones button {
+    background-color: #8B4513; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Manito al pasar por el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+    transition: background-color 0.3s ease; /* Animación en hover */
+}
+
+.botones button:hover {
+    background-color: #ff4040; /* Cambia el color al pasar el ratón */
+}
+
+/*este espacio esta ciendo usado para las pruevas*/
+.photo{
+    width: 220px;
+    height: 190px;
+    border-radius: 20px 20px 0 0 ;
+    margin-top: 20px;
+}
+.cartas a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.carta{
+    margin: 20px;
+}
+.c-img{
+    margin: 0;
+}
+.c-txt{
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 0 0 10px 10px ; 
+    background-color: #ff8c007e;
+}
+p{
+    overflow: hidden;
+}
+/*esto es la animacion de el titulo*/
+.contenedor{
+    height: 10vh;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.palabra{
+    position: relative;
+    margin: 10px;
+    margin-top: 0px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+h1{
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.ami::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 17px 3px rgb(255, 166, 0), 0 0 04px 2px rgb(255, 166, 0);
+    animation-name: orange-shadow;
+    animation-timing-function: ease;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;   
+}
+@keyframes orange-shadow{
+    0%{
+        box-shadow: 0 0 17px 3px #B22222, 0 0 04px 2px #B22222;
+    }
+    20%{
+        box-shadow: 0 0 17px 3px #FF8C00, 0 0 04px 2px #FF8C00;
+    }
+    40%{
+        box-shadow: 0 0 17px 3px #6B8E23, 0 0 04px 2px #6B8E23;
+    }
+    60%{
+        box-shadow: 0 0 17px 3px #D2691E, 0 0 04px 2px #D2691E;
+    }
+    80%{
+        box-shadow: 0 0 17px 3px #8B4513, 0 0 04px 2px #8B4513;
+    }
+    100%{
+        box-shadow: 0 0 17px 3px #8B0000, 0 0 04px 2px #8B0000;
+    }
+}
