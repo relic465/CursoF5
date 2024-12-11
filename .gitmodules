@@ -1,0 +1,3 @@
+[submodule "Home/nextech"]
+	path = Home/nextech
+	url = https://github.com/relic465/nextech.git
