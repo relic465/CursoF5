@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b2828;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    background-color: #A52A2A;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #412020 ;
+    text-align: center;
+    box-shadow: 5px  5px  15px #000;
+}
+#InputAdivinando{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    background-color: #ca3b3b;
+    box-shadow: 5px  5px  15px #000;
+    
+}
+#InputAdivinando::placeholder{
+    color: #000;
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.boton-adivinar{
+    border: none;
+    border-radius: 20px;
+    
+    width: 70px;
+    height: 30px;
+    color: #dadada;
+    background-color: #412020;
+    box-shadow: 5px  5px  15px #000;
+    cursor: pointer;
+    margin: 10px;
+    
+}
+.boton-adivinar:hover{
+    background-color: #271515;
+}
