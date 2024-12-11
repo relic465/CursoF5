@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif; /* Estilo del texto */
     margin: 0; /* Elimina márgenes */
     padding: 0; /* Elimina relleno */
-    height: 100vh; /* Asegura que el fondo ocupe toda la ventana */
+    /*height: 100vh; /* Asegura que el fondo ocupe toda la ventana */
 }
 
 /* Contenedor principal para superponer contenido */
@@ -26,15 +26,12 @@ body {
 }
 
 .content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     padding: 20px;
     width: 90%;
     height: auto;
     background-color: #a52a2aa9;
     border-radius: 20px;
+    margin-bottom: 50px;
 }
 /* Encabezado del menú */
 .menu {
@@ -49,6 +46,8 @@ body {
 /* Botones */
 .botones {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap; /* Permite que los botones se ajusten si hay muchos */
     gap: 15px; /* Espaciado entre botones */
     background-color: #d2691ebb;
@@ -86,6 +85,8 @@ body {
 }
 .cartas{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .carta{
