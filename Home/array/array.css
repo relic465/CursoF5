@@ -6,3 +6,9 @@ body{
     height: 100vh;
     background: linear-gradient(to bottom left, #B22222, #FF8C00);
 }
+#bucle img{
+    width: 200px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
