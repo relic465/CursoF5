@@ -169,3 +169,8 @@ h1{
         box-shadow: 0 0 17px 3px #8B0000, 0 0 04px 2px #8B0000;
     }
 }
+/*footer*/
+.footer{
+    text-align: center;
+    color: #fff;
+}
