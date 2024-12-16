@@ -43,7 +43,7 @@ function adivinar() {
         }
 
         if (intentos === 5 && intento !== numeroSecreto) {
-            mensaje = "¡Has alcanzado el máximo de intentos!";
+            mensaje = "¡Has alcanzado el máximo de intentos! ,  tubiste " + intentos + " intentos.";
             document.getElementById("resetButton").style.display = "block";
             bloquearEntrada(); // Bloquear la entrada después de 5 intentos
         }
