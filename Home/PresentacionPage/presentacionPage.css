@@ -10,7 +10,18 @@ body {
     padding: 0; /* Elimina relleno */
     /*height: 100vh; /* Asegura que el fondo ocupe toda la ventana */
 }
-
+h1{
+    font-size: 50px;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+}
+p{
+    overflow: hidden;
+}
 /* Contenedor principal para superponer contenido */
 .overlay {
     position: relative; /* Posiciona los elementos en relación al contenedor */
@@ -24,86 +35,13 @@ body {
     color: #ffffff; /* Color blanco para el texto */
     background: #0001; /* Filtro oscuro semitransparente */
 }
-
-.content{
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 90%;
-    height: auto;
-    background-color: #a52a2aa9;
-    border-radius: 20px;
-}
 /* Encabezado del menú */
 .menu {
     margin-bottom: 20px; /* Espaciado inferior */
 }
-
 .menu h1 {
     font-size: 2.5rem; /* Tamaño del texto */
     text-shadow: 2px 2px 5px #000b /* Sombra al texto */
-}
-
-/* Botones */
-.botones {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* Permite que los botones se ajusten si hay muchos */
-    gap: 15px; /* Espaciado entre botones */
-    background-color: #d2691ebb;
-    padding: 10px 20px;
-    border-radius: 20px;
-
-}
-
-.botones button {
-    background-color: #8B4513; /* Color del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 1rem; /* Tamaño del texto */
-    cursor: pointer; /* Manito al pasar por el botón */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del botón */
-    transition: background-color 0.3s ease; /* Animación en hover */
-}
-
-.botones button:hover {
-    background-color: #ff4040; /* Cambia el color al pasar el ratón */
-}
-
-/*este espacio esta ciendo usado para las pruevas*/
-.photo{
-    width: 220px;
-    height: 190px;
-    border-radius: 20px 20px 0 0 ;
-    margin-top: 20px;
-}
-.cartas a{
-    color: #ffffff;
-    text-decoration: none;
-}
-.cartas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.carta{
-    margin: 20px;
-}
-.c-img{
-    margin: 0;
-}
-.c-txt{
-    margin: 0;
-    padding: 10px;
-    width: 200px;
-    border-radius: 0 0 10px 10px ; 
-    background-color: #ff8c007e;
-}
-p{
-    overflow: hidden;
 }
 /*esto es la animacion de el titulo*/
 .contenedor{
@@ -122,16 +60,6 @@ p{
     border-radius: 20px;
     padding: 10px;
 }
-h1{
-    font-size: 50px;
-    margin: 0;
-    position: relative;
-    z-index: 3;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
 .ami::before{
     content: "";
     position: absolute;
@@ -165,6 +93,69 @@ h1{
     100%{
         box-shadow: 0 0 17px 3px #8B0000, 0 0 04px 2px #8B0000;
     }
+}
+.content{
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: auto;
+    background-color: #a52a2aa9;
+    border-radius: 20px;
+}
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los botones se ajusten si hay muchos */
+    gap: 15px; /* Espaciado entre botones */
+    background-color: #d2691ebb;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+.botones button {
+    background-color: #8B4513; /* Color del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Manito al pasar por el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra del botón */
+    transition: background-color 0.3s ease; /* Animación en hover */
+}
+.botones button:hover {
+    background-color: #ff4040; /* Cambia el color al pasar el ratón */
+}
+.cartas a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.cartas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.carta{
+    margin: 20px;
+}
+.c-img{
+    margin: 0;
+}
+.photo{
+    width: 220px;
+    height: 190px;
+    border-radius: 20px 20px 0 0 ;
+    margin-top: 20px;
+}
+.c-txt{
+    margin: 0;
+    padding: 10px;
+    width: 200px;
+    border-radius: 0 0 10px 10px ; 
+    background-color: #ff8c007e;
 }
 /*footer*/
 .footer{
