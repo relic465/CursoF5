@@ -61,7 +61,10 @@ p{
     border-radius: 20px;
     padding: 10px;
 }
-
+.palabra a{
+    color: #fff;
+    text-decoration: none;
+}
 .ami::before{
     content: "";
     position: absolute;
