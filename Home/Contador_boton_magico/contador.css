@@ -19,6 +19,13 @@ img{
     max-width: 40%;
     border-radius: 30px;
 }
+.deshacer {
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Posiciona el elemento fuera del flujo normal */
+    top: 10px; /* Espaciado desde la parte superior */
+    left: 10px; /* Espaciado desde la izquierda */
+}
 .boton{
     color: white;
     cursor: pointer;

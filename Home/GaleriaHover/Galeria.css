@@ -9,7 +9,13 @@ h1 {
     text-align: center;
     color: #FFDB58;
 }
-
+.deshacer {
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Posiciona el elemento fuera del flujo normal */
+    top: 10px; /* Espaciado desde la parte superior */
+    left: 10px; /* Espaciado desde la izquierda */
+}
 .galeria-contenedor {
     display: flex;
     flex-wrap: wrap;

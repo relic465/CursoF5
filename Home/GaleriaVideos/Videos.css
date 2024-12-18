@@ -16,6 +16,13 @@ body{
 h1{
     margin: 10px;
 }
+.deshacer {
+    width: 100px;
+    height: 100px;
+    position: absolute; /* Posiciona el elemento fuera del flujo normal */
+    top: 10px; /* Espaciado desde la parte superior */
+    left: 10px; /* Espaciado desde la izquierda */
+}
 .Cotenedor{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
