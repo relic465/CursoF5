@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+    <!--framework-->
+    <title>Document</title>
+</head>
+<body>
+   <a-scene>
+        <a-sky color="#ECECEC"></a-sky>
+        <!--Raton-->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUhPOMiGaFdio64nK2VKGogeKFzO7VvAloDg&s" position="-1 1 -3" rotation="0 0 0" animation="property: object3D.position.y; to:2.2; dir:  alternate; dur: 1000; loop: true"></a-box>
+        <!--Queso-->
+        <a-box src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_kuVoSUbsHVD0prrx1K95UERCzP3BzBPLA&s" position="1 1 -4" rotation="0 0 0"></a-box>
+        <!--Laddrillos-->
+        <a-box src="https://images.photowall.com/products/52172/red-brick-wall.jpg?h=699&q=85" position="1 1 -3" rotation="0 0 0"></a-box>
+        <!--Arcoiris-->
+        <a-sphere position="-2 1.5 -5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0x-Th4YiaVafdLmpWDpReJeed2M61CLG0Dw&s" ></a-sphere>
+        <!--Pasto-->
+        <a-plane src="https://t3.ftcdn.net/jpg/02/49/68/72/360_F_249687268_Yl4AswCdwBQS7NA6hczKq0pfnjQs02UP.jpg" repeat="10 10" position="0 0.5 -3.5" rotation="-90 0 0" width="7" height="7"></a-plane>
+
+        <a-entity environment="preset: forest; dressingAmount: 500"></a-entity>
+
+       <a-ocean color="aqua" depth="100" position="0 0.2 0" width="100"></a-ocean>
+   </a-scene>    
+</body>
+</html>
