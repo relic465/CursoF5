@@ -42,7 +42,7 @@ function adivinar() {
             bloquearEntrada(); // Bloquear la entrada si acierta
         }
 
-        if (intentos === 5 && intento !== numeroSecreto) {
+        if (intentos === 10 && intento !== numeroSecreto) {
             mensaje = "¡Has alcanzado el máximo de intentos! ,  tubiste " + intentos + " intentos.";
             document.getElementById("resetButton").style.display = "block";
             bloquearEntrada(); // Bloquear la entrada después de 5 intentos
