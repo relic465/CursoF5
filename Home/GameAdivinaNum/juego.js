@@ -1,3 +1,4 @@
+const numberInput = document.getElementById("InputAdivinando");
 let numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let intentos = 0;
 let tiempoRestante = 60;
@@ -48,7 +49,7 @@ function adivinar() {
             bloquearEntrada(); // Bloquear la entrada después de 5 intentos
         }
     }
-
+    numberInput.value= "";
     // Solo actualizar el texto del resultado si no se ha alcanzado el límite
     document.getElementById("resultado").innerText = mensaje;
 }
