@@ -36,11 +36,11 @@ p{
     background: #0001; /* Filtro oscuro semitransparente */
 }
 /* Encabezado del menú */
-.menu {
+.titulo {
     margin-bottom: 20px; /* Espaciado inferior */
 }
 
-.menu h1 {
+.titulo h1 {
     font-size: 2.5rem; /* Tamaño del texto */
     text-shadow: 2px 2px 5px #000b /* Sombra al texto */
 }
